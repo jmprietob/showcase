@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showcase</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="./productos.js"></script>
+
 </head>
+
 <body>
     
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Showcase</h1>
+            <p>Recrea un mostrador de alimentos dinámico con carrito de compra y practicar HTML5, CSS3 y JS ES6</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4 droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Carrito</h2>
+                <!-- carrito -->
+                <ul id="carrito" > </ul>
+                <hr>
+                <!-- total -->
+                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            </aside>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script src="./draganddrop.js"></script>
 </body>
+
 </html>
