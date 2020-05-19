@@ -7,7 +7,8 @@
     <title>Showcase</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script src="./productos.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./data/productos.js"></script>
 
 </head>
 
@@ -23,22 +24,20 @@
     <div class="container">
         <div class="row">
             <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-8 row"></main>
+            <div id="items" class="col-sm-8 row"></div>
             <!-- Carrito -->
-            <aside class="col-sm-4 droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="col-sm-4 droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <h2>Carrito</h2>
                 <!-- carrito -->
                 <ul id="carrito" > </ul>
                 <hr>
                 <!-- total -->
                 <p class="text-right">Total: <span id="total"></span>&euro;</p>
-            </aside>
+            </div>
         </div>
     </div>
 
-
-    <script src="./script.js"></script>
-    <script src="./draganddrop.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
